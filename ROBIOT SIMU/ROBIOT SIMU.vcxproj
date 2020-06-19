@@ -34,8 +34,18 @@
   <PropertyGroup Label="UserMacros" />
   <ItemGroup>
     <ClInclude Include="pch.h" />
+    <ClInclude Include="src\CCommande.h" />
+    <ClInclude Include="src\CCompas.h" />
+    <ClInclude Include="src\CLectureCarte.h" />
+    <ClInclude Include="src\pch.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\CCommande.cpp" />
+    <ClCompile Include="src\CCompas.cpp" />
+    <ClCompile Include="src\CLectureCarte.cpp" />
+    <ClCompile Include="src\pch.cpp" />
+    <ClCompile Include="src\Source.cpp" />
+    <ClCompile Include="src\test.cpp" />
     <ClCompile Include="test.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
