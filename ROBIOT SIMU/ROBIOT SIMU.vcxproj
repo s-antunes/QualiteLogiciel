@@ -38,12 +38,16 @@
     <ClInclude Include="src\CCompas.h" />
     <ClInclude Include="src\CLectureCarte.h" />
     <ClInclude Include="src\pch.h" />
+    <ClInclude Include="src\SCoordinates\SCoordinates.h" />
+    <ClInclude Include="src\SMesure\SMesure.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\CCommande.cpp" />
     <ClCompile Include="src\CCompas.cpp" />
     <ClCompile Include="src\CLectureCarte.cpp" />
     <ClCompile Include="src\pch.cpp" />
+    <ClCompile Include="src\SCoordinates\SCoordinates.cpp" />
+    <ClCompile Include="src\SMesure\SMesure.cpp" />
     <ClCompile Include="src\Source.cpp" />
     <ClCompile Include="src\test.cpp" />
     <ClCompile Include="test.cpp" />
