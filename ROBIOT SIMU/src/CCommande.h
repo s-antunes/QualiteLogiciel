@@ -4,6 +4,7 @@
 #include <vector>
 
 #include "CCompas.h"
+#include "pch.h"
 using namespace std;
 
 /**************************************************************
@@ -29,9 +30,9 @@ public:
 	CCommande() { ; };
 
 
-	coordonnees getCoordonnees(int iNumero);
-	int NombreArbre();
-	int LireTableau();
+	coordonnees getTree(int iNumero);
+	int Nbrtree();
+	int ReadList();
 
 private:
 	vector<coordonnees> tabCoordonnees;

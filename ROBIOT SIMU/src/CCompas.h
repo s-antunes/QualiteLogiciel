@@ -12,6 +12,20 @@
 * DATE : 18/06/20
 *
 ***************************************************************/
+#include <fstream>
+#include <string>
+#include "pch.h"
+#include "CArbre.h"
+
+#define IS_FOREST_TALKATIVE true
+#define PATH_TO_FOREST "../../input_files/"
+
+typedef enum {
+    OBSTACLE,
+    TREE,
+    WAY
+}forest_elts;
+
 
 struct coordonnees
 {
@@ -23,6 +37,25 @@ struct coordonnees
 #pragma once
 class CCompas
 {
-	public:
+    private:
+        /* data */
+        std::string forest_name;
+        std::ifstream* forest_descriptor;
+        forest_elts** graph;
+        int nbr_lines = 0;
+        int nbr_cols = 0;
+
+        std::vector<CArbre*> trees;
+
+        bool instantiateGraph();
+        bool buildGraph();
+
+    public:
+        CCompas(std::string _forest_name);
+        ~CCompas();
+        inline forest_elts** getGraph() { return graph; };
+        inline std::vector<CArbre*> getTrees() { return trees; };
+        void printGraph();
+        void printTrees();
 };
 

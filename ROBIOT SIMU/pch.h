@@ -6,3 +6,6 @@
 #pragma once
 
 #include "gtest/gtest.h"
+#include "CArbre.h"
+#include "CCommande.h"
+#include "CCompas.h"

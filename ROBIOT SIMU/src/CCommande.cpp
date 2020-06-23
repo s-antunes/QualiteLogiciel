@@ -1,4 +1,4 @@
-#include "CCommande.h"
+#include "pch.h"
 
 /**************************************************************
 *
@@ -26,14 +26,14 @@
 * 	coordonnees : couple de coordonnées que l'on veut récupérer.
 ***************************************************************/
 
-coordonnees CCommande::getCoordonnees(int iNumero)
+coordonnees CCommande::getTree(int iNumero)
 {
 	if (iNumero < tabCoordonnees.size()) {
 		return tabCoordonnees[iNumero];
 	}
 } /* getCoordonnees */
 
-int CCommande::NombreArbre()
+int CCommande::Nbrtree()
 {
 	return tabCoordonnees.size();
 }
@@ -45,7 +45,7 @@ int CCommande::NombreArbre()
 * SORTIE :
 * 	int : retourne 0 en cas de succès.
 ***************************************************************/
-int CCommande::LireTableau()
+int CCommande::ReadList()
 {
 	ifstream file;
 	file.open("Coordonnees");
